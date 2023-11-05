@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/project-dicoding-react/static/css/main.1781fa72.css",
+    "main.js": "/project-dicoding-react/static/js/main.86136f70.js",
+    "static/js/787.11e48f93.chunk.js": "/project-dicoding-react/static/js/787.11e48f93.chunk.js",
+    "index.html": "/project-dicoding-react/index.html",
+    "main.1781fa72.css.map": "/project-dicoding-react/static/css/main.1781fa72.css.map",
+    "main.86136f70.js.map": "/project-dicoding-react/static/js/main.86136f70.js.map",
+    "787.11e48f93.chunk.js.map": "/project-dicoding-react/static/js/787.11e48f93.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1781fa72.css",
+    "static/js/main.86136f70.js"
+  ]
+}
