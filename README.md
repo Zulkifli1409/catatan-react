@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Aplikasi Catatan Pribadi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi Catatan Pribadi adalah aplikasi sederhana yang memungkinkan pengguna untuk menambah, menghapus, dan mencari catatan pribadi. Aplikasi ini dibangun dengan React dan memenuhi beberapa kriteria utama dan opsional yang mencakup:
 
-## Available Scripts
+## Kriteria Utama
 
-In the project directory, you can run:
+1. **Mampu Menampilkan Daftar Catatan**
+   - Aplikasi menggunakan state komponen untuk menyimpan data catatan.
+   - Menggunakan teknik array map untuk menampilkan daftar catatan.
 
-### `npm start`
+2. **Mampu Menambahkan Catatan**
+   - Aplikasi memanfaatkan controlled component untuk membuat formulir input.
+   - Data catatan disimpan dalam memori, dan setiap catatan merupakan objek JavaScript dengan struktur yang telah disebutkan.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Mampu Menghapus Catatan**
+   - Aplikasi menyediakan tombol hapus untuk menghapus catatan yang disimpan.
+   - Terdapat conditional rendering yang menampilkan pesan "Tidak ada catatan" jika tidak ada catatan yang tersedia.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Kriteria Opsional
 
-### `npm test`
+1. **Fitur Pencarian Catatan**
+   - Aplikasi memiliki fitur pencarian catatan berdasarkan kata kunci.
+   - Jika kolom pencarian tidak kosong, aplikasi hanya menampilkan catatan yang judulnya mengandung kata kunci yang dimasukkan. Jika kolom pencarian kosong, aplikasi menampilkan seluruh catatan.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Limit Karakter pada Input Judul Catatan**
+   - Aplikasi mencegah pengguna memberikan judul catatan lebih dari 50 karakter.
+   - Menampilkan jumlah karakter tersisa yang dapat digunakan oleh pengguna.
 
-### `npm run build`
+3. **Fitur Arsip Catatan**
+   - Aplikasi memiliki fitur arsip catatan.
+   - Aplikasi menyediakan tombol untuk mengarsipkan atau memindahkan catatan dari arsip.
+   - Daftar catatan yang diarsipkan ditampilkan secara terpisah dari catatan yang tidak diarsip.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Cara Menjalankan Aplikasi
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Pastikan Anda memiliki Node.js dan npm terinstal di komputer Anda.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Clone repositori ini ke komputer Anda:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
